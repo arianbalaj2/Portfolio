@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/contact.css">
+    <link rel="stylesheet" href="./assets/materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -14,9 +16,10 @@
     <title>Arian Balaj</title>
 </head>
 <body>
+    <!--Main-->
     <main>
      
-        <div class="sidebar sidebar1">
+        <div class="sidebar ">
             <div class="logo">
                 <img src="./assets/images/profil.png" alt="Arian Balaj">
             </div>
@@ -26,10 +29,7 @@
                 <h3>Arian Balaj</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">What I Do</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About Me</a></li>                <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Home</a></li>
                 </ul>
@@ -43,9 +43,9 @@
 
         </div>
 
-        <div class="container">
+        <div class="container_">
             <div class="profile">
-                <p>PROFILE</p>
+                <p><i class="fa-solid fa-user"></i></p>
             </div>
          
                 <div class="content">
@@ -62,9 +62,10 @@
                 </div>
         </div>
     </main>   
-        <div class="about-me">
+    <!--ABout me-->
+        <div class="about-me" id="about me">
                 <div class="title">
-                    <h1 class="about-title more-title">Know Me More <hr /></h1>
+                    <h1 class="more-title">Know Me More <hr /></h1>
                     <div class="contentt">
                         <h1 class="about-title">Aboout Me</h1>
                     </div>
@@ -96,13 +97,110 @@
                     </div>
                 </div>
                 <div class="about-footer">
-                    <div class="arian">asd</div>
-                    <div class="arian2">asd</div>
-                    <div class="arian3">asd</div>
-                    <div class="arian4">sad</div>
+                    <div class="arian skills ">
+                        <h1>Full-Stack developer <br />
+                             Për Programera</h1>
+                    </div>  
+                    <div class="arian2  skills">
+                        <h1>Teknologji Ushqimore me Bioteknologji <br />
+                            Universiteti i Prishtinës "Hasan Prishtina" at
+                            Prishtinë</h1>
+                    </div>
+                    <div class="arian3 skills">
+                        <h1>SKILLS</h1>
+                        <ul>
+                            <li>Communication Skills</li>
+                            <li> Organizational Skills</li>
+                            <li>Collaboration</li>
+                            <li>Ability to thrive in a high pressure environment</li>
+                            <li>Ability to work well in a team environment</li>
+                        </ul>
+                    </div>
+                    <div class="arian4 skills">
+                        <h1>LANGUAGES</h1>
+                        <ul>
+                            <li>English</li>
+                            <li>Shqip</li>
+                        </ul>
+                    </div>
+                </div>
+       
+
+        <!-- Whaat i do -->
+        
+        
+    </div>
+
+
+     <!--Projects-->
+    <div class="projects">
+        <h1>Projects</h1>
+        <div class="row1">
+            <div class="col s3">asdf</div>
+            <div class="col s3">asaw</div>
+            <div class="col s3">efwef</div>
+            <div class="col-1 s3">wqqd</div>
+            <div class="col-1 s3">qwdqw</div>
+            <div class="col-1 s3">qwdqd</div>
+        </div>
+    </div>
+
+     <!--Contact-->
+     <div class="contact">
+        <div class="maincontainer">
+                <div class="content-text">
+                    <h1>Per ne </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quos architecto commodi praesentium excepturi mollitia cupiditate odio quas atque, ex, esse quisquam obcaecati explicabo aliquam vel voluptatum! Officia, obcaecati recusandae!
+                </p>
                 </div>
         </div>
-    <script src="./js.js"></script>
+        <div class="maincontainer-1">
+            <h1>Regjistrohuni  per t'u
+                njoftuar te <br />paret rreth udhetimeve tona.</h1>
+                <form action="#" method="POST">
+                    <label for="name">Emri</label>
+                    <input type="text" placeholder="Emri" id="name" minlength="2">
+                    <hr>
+                    <label for="mbiemri">Mbiemri</label>
+                    <input type="text" placeholder="Mbiemri" id="mbiemri" minlength="2">
+                    <hr>
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="Email" id="Email">
+                    <hr>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password" id="password" minlength="2">
+                    <hr>
+                    <label for="password">Confirm Password</label>
+                    <input type="password" placeholder="password" id="password" minlength="2">
+                    <hr>
+                    <label for="tel">Phone Number</label>
+                    <input type="text" placeholder="Phone Number" id="tel">
+                    <hr>
+                    <section>
+                        <p>Please select your gender:</p>
+                      <input type="radio" id="male" name="yourgender" value="thegender" checked>
+                      <label for="male">Male</label><br>
+                      <input type="radio" id="feamle" name="yourgender" value="TheGender">
+                      <label for="female">Female</label><br>
+                      <input type="radio" id="Not-impportant" name="yourgender" value="TheGendeer.">
+                      <label for="Not-impportant">Not-impportant</label>
+    
+                    </section>
+                    
+                    <button type="submit" id="button">Send
+    
+                    </button>
+                        <hr class="hr">
+                </form>
+            
+        </div>
+    </div>
+    
+
+     <!--endcontact  -->
+        <script src="./JS/js.js"></script>
     <!-- <script src="./textanimation.js"></script> -->
+    <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
 </body>
 </html>
