@@ -10,6 +10,7 @@ body{
     position: absolute;
     width: 100%;
     overflow-x: hidden !;
+    background-color: rgb(235, 229, 229) !important;
     
 }
 main{
@@ -50,7 +51,7 @@ main{
     width: 100%;
     height: 100vh;
 }
-ul{
+.sidebar ul{
     width: 100%;
     height: 60%;
     display: flex;
@@ -59,7 +60,7 @@ ul{
     align-items: center;
     list-style: none;
 }
-ul li{
+.sidebar ul li{
     text-decoration: none;
 
 }
@@ -86,13 +87,13 @@ ul li{
 
 /* container */
 .container_{
-    background-image: url(../assets/images/background.png);
+    /* background-image: url(../assets/images/background.png); */
+    background-image: url(../assets/images/download.jfif);
     background-size: cover;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     width: 100%;
     height: 100vh;
     border: 2px solid #333;
-    background-color: antiquewhite;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,8 +103,8 @@ ul li{
 /* content */
 .content{
     width: 100%;
-    height: 100vh;
-    color: #fff;
+    height: max-content;
+    color: rgb(0, 0, 0);
     backdrop-filter: blur(4px);
     display:flex;
     flex-direction: column;
@@ -111,21 +112,42 @@ ul li{
     align-items: center;
 
 }
-.hex{
-    display: none;
+
+.descriptions{
+    display: inherit;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
-h1{
-    font-size: 2.9rem;
-    justify-self: baseline;
-    font-family: 'League Spartan', sans-serif;
+.desContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.description1{
+    margin-top: 0px;
+
+}
+.description1 img{
+    height: 400px;
+    width: 440px;
+ 
 }
 .description{
-    margin-top: 30px;
-    font-size: 5.66rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    height: 400px;
+    width: 340px;
+    font-size: 1.6rem;
     text-align: center;
-    box-shadow: rgba(8, 13, 77, 3.5) 0px 50px 100px -0px, 
+    font-weight: 600;
+    /* box-shadow: rgba(8, 13, 77, 3.5) 0px 50px 100px -0px, 
     rgb(223, 223, 223) 0px 30px 60px -12px,
-     rgb(23, 139, 255) 0px -2px 6px -110px inset;
+     rgb(23, 139, 255) 0px -2px 6px -110px inset; */
+    
      transition: all 0.4s ease;
      border-radius: 9px;
 }
@@ -136,56 +158,35 @@ h1{
     height: 59px;
 }
 
-.btn{
-    margin-top: 45px;
+.hire{
+    margin-top: 15px;
     width: 100px;
     height: 60px;
     padding: 10px;
     border-radius: 25px;
-    background:hsl(270, 50%, 15%);
+    background-color:hsl(273, 31%, 71%);
     color: #fff;
-    border: 2px solid rebeccapurple;
+    border:0;
     font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
     transition: 0.4s all ease-out ;
 
 }
-.btn a{
+.hire a{
     text-decoration: none;
     color: #fff;
     
 }
-.btn:hover{
+.hire:hover{
     background:hsl(270, 60%, 40%);
 }
-/* content */
-
-.profile{
-     z-index: 98;
-    position: fixed;
-    top: 0;
-    margin-top: 30px;
-    width: 50px;
-    height: 40px;
-    background:hsl(270, 50%, 15%);
-    color: #fff;
-    text-align: center;
-    padding-top: 7px;
-    border-radius: 6px;
-    border: 2px solid rebeccapurple;
-    font-family: 'Inter', sans-serif; 
-    transition: 0.4s all ease-out ;
-
-}
-.profile:hover{
-    background:hsl(270, 60%, 40%);
-}
+/* icona */
 /* icon animation */
 
 .icon{
     width: 100px;
     height: 100px;
-    margin-top: 100px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +201,7 @@ h1{
      animation: name duration timing-function delay iteration-count direction fill-mode; 
     width: 100%;
     height: 40px;
-    animation: move  1.4s ease infinite alternate forwards;
+    animation: move  1.7s ease infinite alternate forwards;
     font-size: 1.4rem;
     font-weight: bold;
     
@@ -276,202 +277,192 @@ h1{
     
     
 }
+/* content */
 
-/* container-2 */
-.about-me{
-    /* margin-left: 20%; */
-    height: auto;
-    /* background-color: hsl(270, 60%, 25%); */
-    background-color:#353B40;
+.profile{
+     z-index: 98;
+    position: fixed;
+    top: 0;
+    margin-top: 30px;
+    width: 50px;
+    height: 40px;
+    background:hsl(270, 50%, 15%);
     color: #fff;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 6px;
+    border: 2px solid rebeccapurple;
+    font-family: 'Inter', sans-serif; 
+    transition: 0.4s all ease-out ;
+
 }
-.title{
+.profile:hover{
+    background:hsl(270, 60%, 40%);
+}
+
+
+/*about me*/
+.aboutMeH1{
+    height:100vh;
+    width: 100vw;
+    color: rgb(40, 36, 36);
+    background-color: #f9f3f3!important;
+}
+
+   
+
+
+.title-me{
+    height: 7rem;
+    text-align: center;
+    margin: auto 0;
+    background-color:#f0efef;
+    
+}
+
+.title-me h1{
+    font-size:2.5rem !important;
+    /* font-family: 'Raleway',sans-serif; */
+    /* font-family: 'Kurale', serif; */
+    font-family: 'Great Vibes', cursive;
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.aboutme{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    width: 75%;
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows:154px ;
-    background-color: hsl(0, 0%, 98%); */
-}
-.about-content{
+    height: 18rem;
+    font-family: 'Kurale', serif;
     
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows:max-content;
-    /* background-color: #247881; */
-    /* background-color: hsl(198, 79%, 23%); */
-    /* background-color: antiquewhite; */
-}
-
-.contentt {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 154px;
-    z-index: 2;
 }
 .about-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 0%;
-    font-size: 8rem;
-    width: 100%;
-    color: white;
-    font-family: 'Lobster', cursive;
-    opacity: 0.05;
-    background-color: #293262;
-}
-.more-title{
-    margin-top: 60px;
-    opacity: 1;
-    font-size:4.5rem;
-    color: rgb(170, 111, 164);
-    
-}
-.more-title hr{
-    position: absolute;
-    width: 300px;
-    height: 4px;
-   background-color: yellow;
-   border-radius: 8px;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #bbbda6;
 }
 
-.content-a h1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lobster', cursive;
-    margin:20px 0 20px 0;
-    font-size: 3.3rem !important;
-    color: rgb(135, 230, 134);
-}
-.content-a p{
-    line-height: 20px;
-    padding: 0 20px;
-    font-size: 1.1rem;
-    font-family: 'Noto Sans', sans-serif;
-
-}
-.content-b{
-    padding: 70px;
-    line-height: 50px;
-}
-.content-b span{
-    font-weight: bold !important;
-    font-size: 1.4rem !important;
-}
-.content-b ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    }
-.content-b ul li{  
-    font-size: 1.4rem;
-    font-family: 'Noto Sans', sans-serif;
-    }
-.content-b hr{
-    width: 250px;
-    height: 4px;
+.downL{
     border-radius: 8px;
-    background-color: rgb(69, 241, 1);
+    width:250px ;
+    height: 50px;
+    font-size: 1rem;
+    box-shadow: rgba(176, 175, 175, 0.65) 0px 54px 95px, rgba(251, 251, 251, 0.12) 0px -72px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    justify-content: center;
+    padding-top:15px ;
 }
-.content-b a{
-    list-style: none;
+.aboutme a{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
+}
+.aboutme a:hover{
+    color: #6ab5c0;
+    
+    
+}
+.aboutme a:visited {
+    color: red;
 }
 
-.about-footer{
-     padding-top: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: transparent;
+.roww{
+    height: 260px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    background-color: #ffffff;
+    transform: rotate(3deg)
 }
-
-
-
-.about-footer h1 {
-    font-size: 1.5rem;
+.aboutmeRow{
+    height: 20rem;
+}
+.aboutmeRow p,li{
+    font-size: 15spx;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0.8;
+    list-style:symbols();
+}
+.aboutmeCards h3 {
+    font-family: 'Kurale', serif;
+    font-size: 25px;
     text-align: center;
-    margin-top: 5% !important;
-   
 }
-.arian,.arian2, .arian3, .arian4{
-        padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 15rem;
-    
-    min-width:min-content;
-    box-shadow: rgba(228, 227, 227, 0.35) 0px 5px 15px;
-    transition: 0.7s all ease-in-out;
+.last-row {
+    padding-top: 40px;
 }
-
-
-.skills:hover {
-    padding: 0 20px;
-    box-shadow: hsla(189, 93%, 50%, 0.35) 0px 5px 15px;
+.last-row .aboutmeCards {
+    margin-left: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.row1{
-    margin:0 10px ;
-    border: 3px solid rgb(51, 225, 32);
-   display: flex;
-    flex-flow: row wrap;
-   justify-content: flex-end; 
-    /* background-color: transparent; */
-    background-color: #034049;
-    padding: 100px;
-    gap: 30px;
-}
-
-.row1 .col,.col-1{
-    border: 1px solid rgb(138, 102, 56);
-    height: 200px;
-    width: 25rem;
-    
-}
-/* .row1 .col-1{
-    border: 1px solid rgb(138, 102, 56);
-    height: 200px;
-    width: 25rem;
-    
-} */
-.projects{
-    display: flex;
-    flex-direction: column;
-    background-color: red;
+.info ul {
     height: 100%;
-}
-.projects h1{
     width: 100%;
-    text-align: center;
 }
+ul{
+    list-style: none;
+}
+.info ul li {
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+    height: 20%;
+    font-size: 1.02rem;
+    border-radius: 8px;
+    box-shadow: rgb(8, 8, 8) 0px 20px 30px -19px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+.info ul li a{
+    text-decoration: none;
+    color: rebeccapurple;
+
+}
+/* project */
+.project{
+    width: 100vw;
+    height: 120vh;
+    background-color: rgb(2, 151, 101);
+}
+.project-heading{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mainContainer{
+}
+
+.card-block img{
+    width: 300px;
+    height: 200px;
+}
+
+.flex__card{
+    
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.card{
+    background-size: cover;
+text-align: center; 
+    height: 22rem;
+}
+
+
+
+/* Contact */
+section{
+    height: 100vh;
+    padding: 40px;
+}
+.formInput{
+    margin-bottom: 3rem;
+    resize: none;
+    border-radius: 8px;
+    border: none!important;
+}
+textarea{
+    resize: none !important;
+}
+

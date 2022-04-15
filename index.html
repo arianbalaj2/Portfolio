@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="./Style/contact.css">
-    <link rel="stylesheet" href="./assets/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/269c45f682.js" crossorigin="anonymous"></script>
+    
     <title>Arian Balaj</title>
 </head>
 <body>
     <!--Main-->
     <main>
      
-        <div class="sidebar ">
+        <div class="sidebar " id=""home>
             <div class="logo">
                 <img src="./assets/images/profil.png" alt="Arian Balaj">
             </div>
@@ -28,16 +29,16 @@
             <div class="nav-bar">
                 <h3>Arian Balaj</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>                <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>               
+                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <section class="social-icons">
-                    <i class="fa-brands fa-facebook-square"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-instagram-square"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.facebook.com/arianbalaj2" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://github.com/arianbalaj2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/arianbalaj90/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.linkedin.com/in/arian-balaj-90046422a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </section>
             </div>
 
@@ -47,160 +48,289 @@
             <div class="profile">
                 <p><i class="fa-solid fa-user"></i></p>
             </div>
-         
                 <div class="content">
-                     <h1>Welcome</h1>
-            
-                     <p class="description">
-                         <span class="des">I'm Arian Balaj <br>
-                         I'm a Full Stack Developer.</span>
-                     </p>
-                     <button class="btn" type="button"><a href="#">Hire Me</a></button>
+                                                    <div class="descriptions">
+                                                        <div class="desContent">
+                                                            <p class="description1">
+                                                                <img src="./assets/images/svgimage.svg" alt="">
+                                                                </p>
+                                                                <p class="description">
+                                                                    <span class="des">I'm Arian Balaj <br>
+                                                                    I'm a Full Stack Developer.</span>
+                                                                </p>
+                                                        </div>
+                                                    </div>
+                     <button class="hire" type="button"><a href="#">Hire Me</a></button>
                      <div class="icon">
-                        <i class="fa-solid fa-circle-down iconn"></i> 
+                        <a href="#contact"><i class="fa-solid fa-circle-down iconn" ></i></a> 
                      </div>
                 </div>
         </div>
     </main>   
     <!--ABout me-->
-        <div class="about-me" id="about me">
-                <div class="title">
-                    <h1 class="more-title">Know Me More <hr /></h1>
-                    <div class="contentt">
-                        <h1 class="about-title">Aboout Me</h1>
-                    </div>
-                </div>
-                
-                <div class="about-content">
-                    <div class="content-a">
-                        <h1>I'm Arian Balaj , a Web Developer</h1>
-                        <p>
-                            I help you build brand for your business at an affordable price. 
-                            Thousands of clients have procured exceptional results while working 
-                            with our dedicated team. when an unknown printer took a galley of type and
-                             scrambled it to make a type specimen book.
-                        
-                            Delivering work within time and budget which meets client’s 
-                            requirements is our moto. Lorem Ipsum has been the industry's standard dummy 
-                            text ever when an unknown printer took a galley.
-                        </p>
-                    </div>
-                    <div class="content-b">
-                                
-                                <ul>
-                                    <li><span>Name: </span>Arian Balaj <hr /></li>
-                                    <li><span>Email: </span><a href="maitoarianbalaj90@gmail.com">arianbalaj90<hr /></a></li>
-                                    <li><span>Age: </span>23<hr /></li>
-                                    <li><span>From: </span>Dobërdolan,Suharekë<hr /></li>
-                                
-                                </ul>
-                    </div>
-                </div>
-                <div class="about-footer">
-                    <div class="arian skills ">
-                        <h1>Full-Stack developer <br />
-                             Për Programera</h1>
-                    </div>  
-                    <div class="arian2  skills">
-                        <h1>Teknologji Ushqimore me Bioteknologji <br />
-                            Universiteti i Prishtinës "Hasan Prishtina" at
-                            Prishtinë</h1>
-                    </div>
-                    <div class="arian3 skills">
-                        <h1>SKILLS</h1>
-                        <ul>
-                            <li>Communication Skills</li>
-                            <li> Organizational Skills</li>
-                            <li>Collaboration</li>
-                            <li>Ability to thrive in a high pressure environment</li>
-                            <li>Ability to work well in a team environment</li>
-                        </ul>
-                    </div>
-                    <div class="arian4 skills">
-                        <h1>LANGUAGES</h1>
-                        <ul>
-                            <li>English</li>
-                            <li>Shqip</li>
-                        </ul>
-                    </div>
-                </div>
-       
-
-        <!-- Whaat i do -->
+    <div class="container aboutMeH1" id="aboutme">
         
-        
-    </div>
-
-
-     <!--Projects-->
-    <div class="projects">
-        <h1>Projects</h1>
-        <div class="row1">
-            <div class="col s3">asdf</div>
-            <div class="col s3">asaw</div>
-            <div class="col s3">efwef</div>
-            <div class="col-1 s3">wqqd</div>
-            <div class="col-1 s3">qwdqw</div>
-            <div class="col-1 s3">qwdqd</div>
-        </div>
-    </div>
-
-     <!--Contact-->
-     <div class="contact">
-        <div class="maincontainer">
-                <div class="content-text">
-                    <h1>Per ne </h1>
+        <div class="row aboutmeRow">
+            <div class="col-12 title-me">
+                <h1>Know Me More</h1>
+            </div>
+            <div class="col-8 aboutme">
+                <h1 class="about-title">Aboout Me</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quos architecto commodi praesentium excepturi mollitia cupiditate odio quas atque, ex, esse quisquam obcaecati explicabo aliquam vel voluptatum! Officia, obcaecati recusandae!
+                    I help you build brand for your business at an affordable price. 
+                    Thousands of clients have procured exceptional results while working 
+                    with our dedicated team. when an unknown printer took a galley of type and
+                     scrambled it to make a type specimen book.
+                
+                    Delivering work within time and budget which meets client’s 
+                    requirements is our moto. Lorem Ipsum has been the industry's standard dummy 
+                    text ever when an unknown printer took a galley.
                 </p>
+                <a href="./assets/cv/Arian's Resume.pdf"  download="arian"><i class="fa-solid fa-download downL">&nbsp; Download CV</i></a>
+            </div>
+            <div class="col-4 info">
+                <ul>
+                    <li><span>Name: </span>Arian Balaj </li>
+                    <li><span>Email: </span><a href="maitoarianbalaj90@gmail.com">arianbalaj90</a></li>
+                    <li><span>Age: </span>23</li>
+                    <li><span>From: </span>Dobërdolan,Suharekë</li>
+                
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row last-row">
+                  <div class="col-sm aboutmeCards">
+                   <div class="roww"> <h1>Bootcamp: Për Programera</h1>
+                    <h3>Full-Stack Developer</h3>
+                    <ul>
+                        <li>HTML && CSS(Bootstrap, Sass)</li> </li>
+                        <li>JavaScript && React</li>
+                        <li> MySQL</li>
+                        <li>PHP && Lavarel</li>
+                        <li>Python & Django</li>
+                    </ul></div>
+                  </div>
+                  <div class="col-sm aboutmeCards">
+                    <div class="roww">
+                        <h1>Education</h1>
+                        <ul>
+                            <li>Universiteti i Prishtinës "Hasan Prishtina" </li>
+                            <li>Bsc. Teknologji Ushqimore me Bioteknologji</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm aboutmeCards">
+                    <div class="roww">
+                        <h1>SKILLS</h1>
+                    <ul>
+                        <li>Communication Skills</li>
+                        <li> Organizational Skills</li>
+                        <li>Collaboration</li>
+                        <li>Ability to thrive in a high pressure environment</li>
+                        <li>Ability to work well in a team environment</li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm aboutmeCards">
+                   <div class="roww">
+                    <h1>LANGUAGES</h1>
+                    <ul>
+                        <li>English</li>
+                        <li>Shqip</li>
+                    </ul>
+                   </div>
+                  </div>
                 </div>
+              </div>
+   
         </div>
-        <div class="maincontainer-1">
-            <h1>Regjistrohuni  per t'u
-                njoftuar te <br />paret rreth udhetimeve tona.</h1>
-                <form action="#" method="POST">
-                    <label for="name">Emri</label>
-                    <input type="text" placeholder="Emri" id="name" minlength="2">
-                    <hr>
-                    <label for="mbiemri">Mbiemri</label>
-                    <input type="text" placeholder="Mbiemri" id="mbiemri" minlength="2">
-                    <hr>
-                    <label for="Email">Email</label>
-                    <input type="text" placeholder="Email" id="Email">
-                    <hr>
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="password" id="password" minlength="2">
-                    <hr>
-                    <label for="password">Confirm Password</label>
-                    <input type="password" placeholder="password" id="password" minlength="2">
-                    <hr>
-                    <label for="tel">Phone Number</label>
-                    <input type="text" placeholder="Phone Number" id="tel">
-                    <hr>
-                    <section>
-                        <p>Please select your gender:</p>
-                      <input type="radio" id="male" name="yourgender" value="thegender" checked>
-                      <label for="male">Male</label><br>
-                      <input type="radio" id="feamle" name="yourgender" value="TheGender">
-                      <label for="female">Female</label><br>
-                      <input type="radio" id="Not-impportant" name="yourgender" value="TheGendeer.">
-                      <label for="Not-impportant">Not-impportant</label>
-    
-                    </section>
-                    
-                    <button type="submit" id="button">Send
-    
-                    </button>
-                        <hr class="hr">
-                </form>
-            
-        </div>
+       
     </div>
-    
+        <!--Projects*/ -->
+     <div class="container-fluid project" id="projects"> 
+                        <div class="col-12 project-heading">
+                            <h1>Projects</h1>
+                        </div>
+            <div class="py-0">
+                <div class="container-fluid mainContainer pt-3">
+                  <div class="row hidden-md-up">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-block">
+                            <img src="./assets/project-images/Project-1.png" alt="">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+                          <a href="#" class="card-link">link</a>
+                          <a href="#" class="card-link">Second link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-block">
+                            <img src="./assets/project-images/prohect2.png" alt="">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+                          <a href="#" class="card-link">link</a>
+                          <a href="#" class="card-link">Second link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-block">
+                            <img src="./assets/project-images/project3.png" alt="">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+                          <a href="#" class="card-link">link</a>
+                          <a href="#" class="card-link">Second link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-block">
+                            <img src="./assets/project-images/Project-4.png" alt="">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+                          <a href="#" class="card-link">link</a>
+                          <a href="#" class="card-link">Second link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-block">
+                            <img src="./assets/project-images/Project-5.png" alt="">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+                          <a href="#" class="card-link">link</a>
+                          <a href="#" class="card-link">Second link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-block">
+                            <img src="./assets/project-images/project6.jfif" alt="">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+                          <a href="#" class="card-link">link</a>
+                          <a href="#" class="card-link">Second link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+              <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+        </div>
 
-     <!--endcontact  -->
+
+        <section class="mb-4 contact">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4 pb-5" id="contact">Contact us</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5 pb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                a matter of hours to help you.</p>
+        
+            <div class="row">
+        
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+
+
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+                        <!--Grid row-->
+                        <div class="row formInput">
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" placeholder="Your name" class="form-control">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row formInput">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row formInput">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="4" placeholder="your message" class="form-control md-textarea"></textarea>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                    </form>
+        
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Suharekë, Kosovo</p>
+                        </li>
+        
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+383-49-589-650</p>
+                        </li>
+        
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>arianbalaj90@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+            </div>
+        
+        </section>
+
         <script src="./JS/js.js"></script>
-    <!-- <script src="./textanimation.js"></script> -->
-    <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

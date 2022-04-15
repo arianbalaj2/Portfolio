@@ -55,3 +55,10 @@ profile.addEventListener('click', (e) => {
 //       clockButton.innerHTML = 'Hide clock';
 //     }
 //   }
+
+
+
+const arian = document.querySelector('.arian');
+const arian2 = document.querySelector('.arian2');
+const arian3 = document.querySelector('.arian3');
+const arian4 = document.querySelector('.aria4');
