@@ -421,7 +421,7 @@ ul{
 .project{
     width: 100vw;
     height: 120vh;
-    background-color: rgb(2, 151, 101);
+    background-color: rgb(214, 231, 226);
 }
 .project-heading{
     text-align: center;
@@ -434,8 +434,8 @@ ul{
 .card-block img{
     width: 300px;
     height: 200px;
-}
 
+}
 .flex__card{
     
 display: flex;
