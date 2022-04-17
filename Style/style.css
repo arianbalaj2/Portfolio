@@ -1,3 +1,5 @@
+@import url(../Style/mediaStyle.css);
+/* Global */
 :root{
 }
 
@@ -13,66 +15,68 @@ body{
     background-color: rgb(235, 229, 229) !important;
     
 }
+ul li a{
+    text-decoration: none;
+}
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+    
+}
+.nav{
+    position: absolute;
+    width: 100%;
+}
+
+.col__logo{
+    margin-left: 30px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+.col__links{
+    border-radius: 8px;
+}
+.col__links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    
+   
+    /* -webkit-backdrop-filter: blur(2px); */
+    
+}
+.col__links ul li a{
+    color: #000000 ;
+    font-weight: 600;
+    font-size: 1.5rem;
+   
+}
+.col__links ul li {
+    
+   
+}
+
+ul li:not(:last-child){
+    margin-right: 2rem;
+}
+
+/* main container */
 main{
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     
-}
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20%;
-    z-index: 99;
-    height: 100vh;
-    border: 2px solid #333;
-    background-color: #034049;
-    display: none;
-    transition: 1.6 all ease;
-}
-    
-
-.logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    width: 150px;
-    height: 150px;
-}
-
-
-/* navbar */
-.nav-bar{
-    width: 100%;
-    height: 100vh;
-}
-.sidebar ul{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-.sidebar ul li{
-    text-decoration: none;
-
-}
-.nav-bar a{
-    text-decoration: none;
-    font-family: 'Roboto Slab', serif;
-    color: #fff;
-}
-.nav-bar h3{
-    color: #fff;
-    margin-top: 5px;
-    text-align: center;
 }
 .social-icons{
     display:flex;
@@ -84,7 +88,6 @@ main{
     margin:0 auto;
     color: rgb(153, 159, 230);
 }
-
 /* container */
 .container_{
     /* background-image: url(../assets/images/background.png); */
@@ -93,7 +96,6 @@ main{
     /* padding-left: 30px; */
     width: 100%;
     height: 100vh;
-    border: 2px solid #333;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,6 +116,7 @@ main{
 }
 
 .descriptions{
+    width: 80%;
     display: inherit;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -279,28 +282,6 @@ main{
 }
 /* content */
 
-.profile{
-     z-index: 98;
-    position: fixed;
-    top: 0;
-    margin-top: 30px;
-    width: 50px;
-    height: 40px;
-    background:hsl(270, 50%, 15%);
-    color: #fff;
-    text-align: center;
-    padding-top: 7px;
-    border-radius: 6px;
-    border: 2px solid rebeccapurple;
-    font-family: 'Inter', sans-serif; 
-    transition: 0.4s all ease-out ;
-
-}
-.profile:hover{
-    background:hsl(270, 60%, 40%);
-}
-
-
 /*about me*/
 .aboutMeH1{
     height:100vh;
@@ -337,6 +318,19 @@ main{
     font-family: 'Kurale', serif;
     
 }
+.aboutme a{
+    text-decoration: none;
+    color: #000000;
+}
+.aboutme a:hover{
+    color: #6ab5c0;
+    
+    
+}
+.aboutme a:visited {
+    color: red;
+}
+
 .about-title{
     font-family: 'Satisfy', cursive;
     font-weight: 400;
@@ -354,25 +348,21 @@ main{
     justify-content: center;
     padding-top:15px ;
 }
-.aboutme a{
-    text-decoration: none;
-    color: #000000;
-}
-.aboutme a:hover{
-    color: #6ab5c0;
-    
-    
-}
-.aboutme a:visited {
-    color: red;
-}
-
 .roww{
     height: 260px;
-    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #ffffff;
-    transform: rotate(3deg)
+    transform: rotateX(50deg);
+    border-radius:10px;
 }
+.roww h1{
+    font-size: 1.2rem;
+    height: fit-content;
+    padding: 10px 0;
+    background-color: #bbbda6;
+}
+
+
 .aboutmeRow{
     height: 20rem;
 }
@@ -428,12 +418,10 @@ ul{
     padding-top: 10px;
 }
 
-.mainContainer{
-}
 
 .card-block img{
-    width: 300px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 
 }
 .flex__card{
@@ -466,3 +454,595 @@ textarea{
     resize: none !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+@media screen and (max-width: 575.98px){ 
+
+   
+    /* header */
+  
+  .nav{
+      width: fit-content;
+      backdrop-filter: blur(15px);
+  }
+  /* kjo */
+  .col__logo {
+      display: none;
+  }
+  
+  .col__links{
+      border-radius: 8px;
+  }
+  .col__links ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding: 0% !important;
+      width: 100vw;  
+  }
+  .col__links ul li{
+      text-align: center;
+
+}
+  .col__links ul li a{
+      color: #000000 ;
+      font-weight: 700;
+      font-size: 1rem;
+     
+  }
+  ul li:not(:last-child){
+      margin-right: 1.2rem;
+  }  
+  /* main */
+
+  main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* container */
+.container_{
+    width: 100%;
+    height: 100vh;
+
+  
+}
+/* content */
+.content{
+    width: 100%;
+    display:flex;
+
+}
+.descriptions{
+    width: 100%;
+    height: 100px;
+    display: inherit;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/*  */
+}
+.description{
+    height: 300px;
+    width: 340px;
+    font-size: 1rem;
+/*  */
+}
+.description1{
+    display: none;
+}
+
+.hire{
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 8px;
+/*  */
+}
+
+/* icona */
+/* icon animation */
+
+.icon{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iconn{
+    font-size: 1.6rem;
+    color: rebeccapurple;
+
+}
+
+
+
+/*about me*/
+.aboutMeH1{
+    height:fit-content;
+    width: 100vw;
+    color: rgb(40, 36, 36);
+    background-color: #ffffff!important;
+    /*  */
+}
+.aboutmeRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:max-content;
+}
+.aboutmeRow p,li{
+    height: fit-content;
+    width: 100%;
+    font-size: 15spx;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0.8;
+    list-style:symbols();
+}
+.title-me{
+    height: fit-content;
+    text-align: center;
+    margin: auto 0;
+    background-color:#f0efef;
+    /*  */
+}
+.title-me h1{
+    font-size:1.5rem !important;
+    /* font-family: 'Raleway',sans-serif; */
+    /* font-family: 'Kurale', serif; */
+    font-family: 'Great Vibes', cursive;
+    margin-top: 15px;
+    opacity: 0.6;
+}
+.aboutme{
+    height: fit-content;
+ 
+    /*  */
+}
+.downL{
+    width:150px ;
+    height: 25px;
+    padding:5px ;
+    margin-left:50px ;
+    /*  */
+}
+.downL:hover{
+    background-color: rgb(165, 230, 165);
+}
+
+.aboutme i{
+    font-size: 5px;
+    color: rebeccapurple;
+}
+
+.about-title{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    /*  */
+}
+.info ul li {
+    padding: 10px;
+    height: fit-content;
+    /*  */
+}
+
+.last-row {
+    padding-top: 10px;
+    /*  */
+}
+.last-row .aboutmeCards {
+    margin-left: 5px;
+    /*  */
+}
+
+.roww{
+    height: fit-content;
+    transform: rotateX(20deg);
+    padding: 10px 0;
+} 
+.roww ul li{
+    font-weight: 530;
+}
+.roww h1{
+    font-size: 1.2rem;
+    height: fit-content;
+    padding: 10px 0;
+}
+
+
+/* project */
+.project{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(214, 231, 226);
+    padding: 15px 0;
+}
+
+.card-block, .card{
+    height: fit-content;
+}
+
+.card-block img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.card{
+    background-size: cover;
+text-align: center; 
+    height: fit-content;
+    padding: 20px 0;
+}
+
+
+/* Contact */
+section{
+    height: fit-content;
+    padding: 20px;
+}
+.formInput{
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: none!important;
+}
+textarea{
+    resize: none !important;
+}
+
+
+
+
+   } 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media screen and (min-device-width : 576px)  and (max-width: 767.98px) { 
+
+    
+    *{
+        height: fit-content;
+    }
+    /* header */
+  
+  header{
+      width: fit-content;
+  }
+  .nav{
+        width: fit-content;
+        backdrop-filter: blur(15px);
+  }
+  /* kjo */
+  .col__logo {
+      display: none;
+  }
+  
+  .col__links{
+      border-radius: 8px;
+  }
+  .col__links ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding: 0% !important;
+      width: 100vw;  
+  }
+  .col__links ul li{
+      text-align: center;
+
+}
+  .col__links ul li a{
+      color: #000000 ;
+      font-weight: 700;
+      font-size: 1.3rem;
+
+  }
+
+
+
+  /* main */
+
+  main{
+    height: fit-content;
+  
+}
+
+/* container */
+.container_{
+    width: 100%;
+    height: 50vh;
+}
+/* content */
+.content{
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.descriptions{
+    width: 90vw;
+    height: 300px;
+    margin-top: 60px;
+    display: inherit;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/*  */
+}
+
+.description1 img{
+    height: 200px;
+    width: 300px;
+}
+
+.hire{
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 8px;
+/*  */
+}
+
+/* icona */
+/* icon animation */
+
+.icon{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iconn{
+    font-size: 1.9rem;
+    color: rebeccapurple;
+
+}
+
+
+
+/*about me*/
+.aboutMeH1{
+    height:fit-content;
+    width: 100vw;
+    color: rgb(40, 36, 36);
+    background-color: #ffffff!important;
+    /*  */
+}
+.aboutmeRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:max-content;
+}
+.aboutmeRow p,li{
+    height: fit-content;
+    width: 100%;
+    font-size: 15spx;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0.8;
+    list-style:symbols();
+}
+.title-me{
+    height: fit-content;
+    text-align: center;
+    margin: auto 0;
+    background-color:#f0efef;
+    /*  */
+}
+.title-me h1{
+    font-size:1.5rem !important;
+    /* font-family: 'Raleway',sans-serif; */
+    /* font-family: 'Kurale', serif; */
+    font-family: 'Great Vibes', cursive;
+    margin-top: 15px;
+    opacity: 0.6;
+}
+.aboutme{
+    height: fit-content;
+ 
+    /*  */
+}
+.downL{
+    width:150px ;
+    height: 25px;
+    padding:5px ;
+    margin-left:50px ;
+    /*  */
+}
+.downL:hover{
+    background-color: rgb(165, 230, 165);
+}
+
+.aboutme i{
+    font-size: 5px;
+    color: rebeccapurple;
+}
+
+.about-title{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    /*  */
+}
+.info ul li {
+    padding: 10px;
+    height: fit-content;
+    /*  */
+}
+
+.last-row {
+    padding-top: 10px;
+    /*  */
+}
+.last-row .aboutmeCards {
+    margin-left: 5px;
+    /*  */
+}
+
+.roww{
+    height: fit-content;
+    transform: rotateX(20deg);
+    padding: 10px 0;
+} 
+.roww ul li{
+    font-weight: 530;
+}
+.roww h1{
+    font-size: 1.2rem;
+    height: fit-content;
+    padding: 10px 0;
+}
+
+
+/* project */
+.project{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(214, 231, 226);
+    padding: 15px 0;
+}
+
+.card-block, .card{
+    height: fit-content;
+}
+
+.card-block img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.card{
+    background-size: cover;
+text-align: center; 
+    height: fit-content;
+    padding: 20px 0;
+}
+
+
+/* Contact */
+section{
+    height: fit-content;
+    height: 90rem!important;
+    padding: 10px;
+}
+.formInput{
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: none!important;
+}
+textarea{
+    resize: none !important;
+}
+
+
+
+
+
+
+
+
+   }
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    
+    
+    .col__logo{
+        margin-left: 10px;
+    }
+
+    .col__links ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+    }
+    ul li{
+        margin-right: 1rem;
+    }
+    
+    
+  
+    .description1 img{
+        height: 200px;
+        width: 250px;
+     
+    }
+    /*about me*/
+    .aboutMeH1{
+        height:100vh;
+        width: 100vw;
+        color: rgb(40, 36, 36);
+        background-color: #f9f3f3!important;
+    }
+    
+    /* project */
+    .project{
+        width: 100vw;
+        height: fit-content;
+        background-color: rgb(214, 231, 226);
+    }
+
+}

@@ -17,37 +17,37 @@
     <title>Arian Balaj</title>
 </head>
 <body>
+        <header class="header">
+            <div class="container-fluide nav">
+                <div class="row navbar">
+                    <div class="col-3 col__logo">
+                        <div class="logo">
+                            <img src="./assets/images/arianLogo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-7  col-sm-12 col__links">
+                        <ul>
+                            <li> <a href="#index">Home</a></li>
+                            <li> <a href="#aboutme">About Me</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li> <a href="#contact">Contact</a></li>
+                        </ul>
+                </div> 
+                </div>
+            </div>
+        </header>
+
+
     <!--Main-->
     <main>
-     
-        <div class="sidebar " id=""home>
-            <div class="logo">
-                <img src="./assets/images/profil.png" alt="Arian Balaj">
-            </div>
-            
-
-            <div class="nav-bar">
-                <h3>Arian Balaj</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>               
-                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <section class="social-icons">
-                    <a href="https://www.facebook.com/arianbalaj2" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                    <a href="https://github.com/arianbalaj2" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/arianbalaj90/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                    <a href="https://www.linkedin.com/in/arian-balaj-90046422a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </section>
-            </div>
-
-        </div>
-
+        <!-- <section class="social-icons">
+            <a href="https://www.facebook.com/arianbalaj2" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://github.com/arianbalaj2" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/arianbalaj90/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.linkedin.com/in/arian-balaj-90046422a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </section> -->
         <div class="container_">
-            <div class="profile">
-                <p><i class="fa-solid fa-user"></i></p>
-            </div>
+            
                 <div class="content">
                                                     <div class="descriptions">
                                                         <div class="desContent">
@@ -60,21 +60,23 @@
                                                                 </p>
                                                         </div>
                                                     </div>
-                     <button class="hire" type="button"><a href="#">Hire Me</a></button>
+                     <button class="hire" type="button"><a href="#contact">Hire Me</a></button>
                      <div class="icon">
                         <a href="#contact"><i class="fa-solid fa-circle-down iconn" ></i></a> 
                      </div>
                 </div>
         </div>
-    </main>   
+    </main>  
+    
+    
     <!--ABout me-->
     <div class="container aboutMeH1" id="aboutme">
         
-        <div class="row aboutmeRow">
+        <div class="row sm-column aboutmeRow">
             <div class="col-12 title-me">
                 <h1>Know Me More</h1>
             </div>
-            <div class="col-8 aboutme">
+            <div class="col-md-8 col-lg-8 col-sm-12 aboutme">
                 <h1 class="about-title">Aboout Me</h1>
                 <p>
                     I help you build brand for your business at an affordable price. 
@@ -85,10 +87,13 @@
                     Delivering work within time and budget which meets client’s 
                     requirements is our moto. Lorem Ipsum has been the industry's standard dummy 
                     text ever when an unknown printer took a galley.
+                    <br />
+                    <br />
+                    <a href="./assets/cv/Arian's Resume.pdf"  download="arian"><i class="fa-solid fa-download downL">&nbsp; Download CV</i></a>
                 </p>
-                <a href="./assets/cv/Arian's Resume.pdf"  download="arian"><i class="fa-solid fa-download downL">&nbsp; Download CV</i></a>
+                
             </div>
-            <div class="col-4 info">
+            <div class="col-md-4 col-lg-4 col-sm-12 info">
                 <ul>
                     <li><span>Name: </span>Arian Balaj </li>
                     <li><span>Email: </span><a href="maitoarianbalaj90@gmail.com">arianbalaj90</a></li>
@@ -146,6 +151,8 @@
         </div>
        
     </div>
+
+
         <!--Projects*/ -->
      <div class="container-fluid project" id="projects"> 
                         <div class="col-12 project-heading">
@@ -158,7 +165,7 @@
                       <div class="card">
                         <div class="card-block">
                             <img src="./assets/project-images/Project-1.png" alt="">
-                          <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">Card title</h4>
                           <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                           <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
                           <a href="#" class="card-link">link</a>
@@ -237,12 +244,12 @@
         </div>
 
 
-        <section class="mb-4 contact">
+        <section class="mb-4 contact" id="contact">
 
             <!--Section heading-->
             <h2 class="h1-responsive font-weight-bold text-center my-4 pb-5" id="contact">Contact us</h2>
             <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5 pb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            <p class="text-center w-responsive mx-auto mb-3 pb-2">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                 a matter of hours to help you.</p>
         
             <div class="row">
@@ -251,13 +258,13 @@
                 <div class="col-md-9 mb-md-0 mb-5">
 
 
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST" autocomplete="off" >
         
                         <!--Grid row-->
                         <div class="row formInput">
                             <!--Grid column-->
                             <div class="col-md-6">
-                                <div class="md-form mb-0">
+                                <div class="md-form mb-2">
                                     <input type="text" id="name" name="name" placeholder="Your name" class="form-control">
                                 </div>
                             </div>
@@ -266,8 +273,7 @@
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" placeholder="Enter your email" class="form-control">
                                 </div>
                             </div>
                             <!--Grid column-->
@@ -325,7 +331,12 @@
                     </ul>
                 </div>
                 <!--Grid column-->
-        
+                   <div class="social-icons">
+            <a href="https://www.facebook.com/arianbalaj2" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://github.com/arianbalaj2" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/arianbalaj90/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.linkedin.com/in/arian-balaj-90046422a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
             </div>
         
         </section>
