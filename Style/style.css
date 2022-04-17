@@ -61,10 +61,7 @@ header{
     font-size: 1.5rem;
    
 }
-.col__links ul li {
-    
-   
-}
+
 
 ul li:not(:last-child){
     margin-right: 2rem;
@@ -1046,3 +1043,29 @@ textarea{
     }
 
 }
+
+@media (max-width: 1199.98px) { 
+
+    
+    .col__links ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+ul li:not(:last-child){
+    margin-right: 3rem;
+}
+
+} 
+@media (min-width: 1200.98px) { 
+
+    
+    
+ul li:not(:last-child){
+    margin-right: 9rem;
+}
+
+} 
